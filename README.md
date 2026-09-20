@@ -3,6 +3,8 @@
 Mame, with the plugin hiscores can extract from roms to a binary file named hi file.
 Mame Hi Extractor is an hiscore binary file extractor to json.
 
+Maintained by [Arcadoolic](https://github.com/Arcadoolic). Originally created by [Snosky](https://github.com/Snosky/mame-hi-extractor).
+
 ## Install
 
 ```
