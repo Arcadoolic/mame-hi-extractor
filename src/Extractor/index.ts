@@ -45,6 +45,7 @@ import Arknoid2 from "./arknoid2";
 import Armedf from "./armedf";
 import Armorcar from "./armorcar";
 import Armwar from "./armwar";
+import Asterix from "./asterix";
 import Asteroid from "./asteroid";
 import Avsp from "./avsp";
 import Bankp from "./bankp";
@@ -54,6 +55,7 @@ import Bosco from "./bosco";
 import Bouldash from "./bouldash";
 import Btime from "./btime";
 import Bublbobl from "./bublbobl";
+import Captcomm from "./captcomm";
 import Centiped from "./centiped";
 import Chasehq from "./chasehq";
 import Cninja from "./cninja";
@@ -75,6 +77,7 @@ import Dkongjr from "./dkongjr";
 import Docastle from "./docastle";
 import Donpachi from "./donpachi";
 import Dorunrun from "./dorunrun";
+import Dynablst from "./dynablst";
 import Ffight from "./ffight";
 import Galaga from "./galaga";
 import Galaga88 from "./galaga88";
@@ -190,6 +193,7 @@ const extractors: { [romName: string]: any } = {
     'armedf': Armedf,
     'armorcar': Armorcar,
     'armwar': Armwar,
+    'asterix': Asterix,
     'asteroid': Asteroid,
     'avsp': Avsp,
     'bankp': Bankp,
@@ -199,6 +203,7 @@ const extractors: { [romName: string]: any } = {
     'bouldash': Bouldash,
     'btime': Btime,
     'bublbobl': Bublbobl,
+    'captcomm': Captcomm,
     'centiped': Centiped,
     'chasehq': Chasehq,
     'cninja': Cninja,
@@ -220,6 +225,7 @@ const extractors: { [romName: string]: any } = {
     'docastle': Docastle,
     'donpachi': Donpachi,
     'dorunrun': Dorunrun,
+    'dynablst': Dynablst,
     'ffight': Ffight,
     'galaga': Galaga,
     'galaga88': Galaga88,
