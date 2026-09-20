@@ -5,7 +5,27 @@ Mame Hi Extractor is an hiscore binary file extractor to json.
 
 Maintained by [Arcadoolic](https://github.com/Arcadoolic). Originally created by [Snosky](https://github.com/Snosky/mame-hi-extractor).
 
-## Install
+## Use in a project
+
+```
+npm install @arcadoolic/mame-hi-extractor
+```
+
+```js
+const { MameHiExtractor } = require('@arcadoolic/mame-hi-extractor')
+
+// <mameDir>/hiscore/<rom>.hi is read
+const extractor = new MameHiExtractor('/path/to/mame')
+if (extractor.exist('asterix')) {
+    const game = await extractor.get('asterix')
+    console.log(game.extract().scores)
+}
+```
+
+`get()` is asynchronous and the class is a named export.
+
+## Develop
+
 
 ```
 npm install

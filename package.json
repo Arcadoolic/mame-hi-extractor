@@ -1,6 +1,6 @@
 {
-  "name": "mame-hi-extractor",
-  "version": "2.0.0-beta.1",
+  "name": "@arcadoolic/mame-hi-extractor",
+  "version": "2.0.0",
   "author": "snosky",
   "contributors": [
     "Arcadoolic (https://github.com/Arcadoolic)"
@@ -8,6 +8,9 @@
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepublish": "npm run build",
     "prebuild": "node generate-extractors-dictionnary.cjs",
@@ -30,5 +33,8 @@
   "repository": {
     "type": "git",
     "url": "github:Arcadoolic/mame-hi-extractor"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
