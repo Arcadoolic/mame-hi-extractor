@@ -1,5 +1,5 @@
 {
-  "name": "@arcadoolic/mame-hi-extractor",
+  "name": "@arcadoolic/mhiex",
   "version": "2.0.0",
   "author": "snosky",
   "contributors": [
@@ -12,7 +12,7 @@
     "dist"
   ],
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "prebuild": "node generate-extractors-dictionnary.cjs",
     "build": "tsc",
     "test": "jest"
@@ -26,13 +26,13 @@
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
   },
-  "homepage": "https://github.com/Arcadoolic/mame-hi-extractor",
+  "homepage": "https://github.com/Arcadoolic/mhiex",
   "bugs": {
-    "url": "https://github.com/Arcadoolic/mame-hi-extractor/issues"
+    "url": "https://github.com/Arcadoolic/mhiex/issues"
   },
   "repository": {
     "type": "git",
-    "url": "github:Arcadoolic/mame-hi-extractor"
+    "url": "github:Arcadoolic/mhiex"
   },
   "publishConfig": {
     "access": "public"
