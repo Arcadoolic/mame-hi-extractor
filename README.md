@@ -5,7 +5,27 @@ Mame Hi Extractor is an hiscore binary file extractor to json.
 
 Maintained by [Arcadoolic](https://github.com/Arcadoolic). Originally created by [Snosky](https://github.com/Snosky/mame-hi-extractor).
 
-## Install
+## Use in a project
+
+```
+npm install @arcadoolic/mhiex
+```
+
+```js
+const { MameHiExtractor } = require('@arcadoolic/mhiex')
+
+// <mameDir>/hiscore/<rom>.hi is read
+const extractor = new MameHiExtractor('/path/to/mame')
+if (extractor.exist('asterix')) {
+    const game = await extractor.get('asterix')
+    console.log(game.extract().scores)
+}
+```
+
+`get()` is asynchronous and the class is a named export.
+
+## Develop
+
 
 ```
 npm install
@@ -20,14 +40,14 @@ raiden
 1941
 ```
 
-Put your hi file into de demo directory: `./mame-hi-extractor/demo-hiscores/hiscore/`
+Put your hi file into de demo directory: `./mhiex/demo-hiscores/hiscore/`
 
 ```
 ./demo-hiscores/hiscore/raiden.hi
 ./demo-hiscores/hiscore/raiden.1941
 ```
 
-Put the hiscores screenshot(s) of rom based on you hi file into de demo directory: `./mame-hi-extractor/demo-hiscores/screenshots/`
+Put the hiscores screenshot(s) of rom based on you hi file into de demo directory: `./mhiex/demo-hiscores/screenshots/`
 
 ```
 ./demo-hiscores/screenshots/raiden.part1.png
@@ -35,14 +55,14 @@ Put the hiscores screenshot(s) of rom based on you hi file into de demo director
 ./demo-hiscores/screenshots/1941.jpg
 ```
 
-Create your extractor by copying or creating the file in the right directory: `./mame-hi-extractor/src/Extractor/`
+Create your extractor by copying or creating the file in the right directory: `./mhiex/src/Extractor/`
 
 ```
 ./src/Extractor/raiden.ts
 ./src/Extractor/1941.ts
 ````
 
-And create your testing hiscores file unto the right directory: `./mame-hi-extractor/test/`
+And create your testing hiscores file unto the right directory: `./mhiex/test/`
 
 ```
 ./test/raiden.test.ts
